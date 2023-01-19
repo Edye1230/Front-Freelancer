@@ -56,12 +56,12 @@ return formData;
 
 }
   const postData = async () => {    
-   await axios.post("https://localhost:7249/home/index", appendData())  
+   await axios.post("https://freelancerdeploy1.azurewebsites.net/home/index", appendData())  
   };
 
 
    const getPDF = async () => {
-     await axios.get("https://localhost:7249/home/create", {
+     await axios.get("https://freelancerdeploy1.azurewebsites.net/home/create", {
       params: {
         Currency: document.getElementById("currency").value,
         TotalAmmount: document.getElementById("amount").value,
